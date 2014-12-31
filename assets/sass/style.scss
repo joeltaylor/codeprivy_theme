@@ -2,7 +2,7 @@
 // Colours //
 // ============================================================ //
 
-$primary: #F03838;
+$primary: #51AF62;
 $secondary: #303030;
 $background: #FEFEFE;
 
@@ -95,7 +95,7 @@ table {
     margin-bottom:40px;
     width: 100%;
 
-    tbody > tr:nth-child(odd) > td, 
+    tbody > tr:nth-child(odd) > td,
     tbody > tr:nth-child(odd) > th {
         background-color: #f7f7f3;
     }
@@ -196,8 +196,20 @@ table {
     overflow: auto;
     text-align: center;
     text-transform: uppercase;
-}
 
+  .site-title {
+    float: none;
+    font-size: 30px;
+    margin: 30px 0;
+
+    a {
+        float: none;
+      }
+  }
+  .site-description {
+    margin: 0 0 10px;
+  }
+}
 .site-title-wrapper {
     display: table;
     margin: 0 auto;
@@ -222,12 +234,12 @@ table {
 .site-logo {
     display: block;
 
-    img { margin: 0; }
+    img { margin: 0 auto; }
 }
 
 .site-nav {
     list-style: none;
-    margin: 28px 0 10px;
+    margin: 0px 0 10px;
 }
 
 .site-nav-item {
@@ -246,7 +258,11 @@ table {
 #latest-post { display: none; }
 
 .post-container { margin: 0 40px; }
-
+.page {
+  .post-header {
+    padding: 0;
+  }
+}
 .post-header {
     border-bottom: 6px solid $secondary;
     margin: 0 0 50px;
@@ -580,7 +596,7 @@ table {
         margin-top: 5px;
     }
 
-    .post-date, 
+    .post-date,
     .blog-description,
     .author-meta {
         margin-top: 20px;
@@ -649,13 +665,13 @@ table {
         line-height: 1.2;
     }
 
-    .post-date, 
+    .post-date,
     .blog-description,
     .author-meta {
         line-height: 1.6;
     }
 
-    .post-date, 
+    .post-date,
     .blog-description,
     .author-meta {
         margin-top: 10px;
