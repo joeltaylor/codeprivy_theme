@@ -203,6 +203,7 @@ h3.post-title {
 	margin-top:1.5em;
 	background-color:#eee;
 	padding:0.5em;
+  max-width:250px;
 }
 #comments {
 	margin-top: 0.15em;
