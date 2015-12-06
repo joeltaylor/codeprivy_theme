@@ -1,34 +1,54 @@
-# Ghostwriter
+# Crisp 
 
-Ghostwriter is a simple AJAX driven theme for the [Ghost](http://github.com/tryghost/ghost/) blogging platform released under the MIT License.
+A minimalist, responsive, and open-source theme for [Ghost](http://ghost.org) by [Kathy Qian](http://kathyqian.com).
 
-**[View a demo of Ghostwriter](http://ghost.jollygoodthemes.com/ghostwriter/)**
+![Index](https://raw.github.com/kathyqian/crisp-ghost-theme/master/screenshots/index.png)   
 
-**[Download Ghostwriter](https://github.com/roryg/ghostwriter/archive/master.zip)**
+### Required Steps for Installation
 
-**[See more of my themes](http://jollygoodthemes.com)**
+1. Download the files   
+2. Replace the `example` disqus_shortname with your shortname on *line 4* of **partials/comments.hbs**, or delete the #comments div to remove comments altogether
+3. Configure the follow buttons in **partials/follow.hbs** (see section below)
+4. Add the folder to the **content/themes** directory of your Ghost installation
+5. Select the theme in the settings page of your Ghost admin panel
 
-### Features
+### Suggested Customizations
 
-* Supports Ghost 0.5
-* Clean typography focused design.
-* Fully responsive (includes fitvid.js for responsive video embeds).
-* AJAX loading for fast, smooth transitions between posts and pages.
-* SASS files included.
-* Static page support.
-* Featured post support.
-* A bunch of other bits and bobs.
+* Change the link color on *line 87* in **assets/styles/crisp.css**
+* Add code for Google Analytics in **default.hbs** after `{{ghost_foot}}`
+* Remove irrelevant social sharing services in **partials/share.hbs**
+* Change your blog logo to change the favicon and the picture in the sidebar (the blog cover is not used)
 
-### Static Pages and Navigation
+### Editing Follow Buttons
 
-Ghost 0.4 introduced static pages which you can use for making pages separate from your list of blog posts. There isn't however a way to output a list of static pages for navigation yet so you'll need to edit the navigation menu in the default.hbs file yourself. The HTML for the menu starts on `line 37` of the default.hbs file and contains an example `About` menu item on `line 40`.
+Crisp uses Font Awesome for icons. See the Font Awesome documentation for the [full list of icons](http://fortawesome.github.io/Font-Awesome/icons/) and [usage tips](http://fortawesome.github.io/Font-Awesome/examples/). 
 
-### Troubleshooting
+I have placed some common buttons in **follow.hbs**, with more options in the commented out sections. Make sure to replace the `username` in the URLs so the links point to your profiles. 
 
-###### The Browse Posts link isn't working
+### Features, Changelog, and Technical Notes
 
-If you're having trouble with the browse posts link not working make sure you're using the currect URL for your environment in your Ghost config.js file. I.e. if your Ghost site is being served on http://your-site-name.com make sure you use exactly that URL in your config.js file and not for example http://www.your-site-name.com
+Below is a summary of updates since the initial release. If you need more detail, I suggest reading the [full commit history](https://github.com/kathyqian/crisp-ghost-theme/commits/master/). For an idea of the roadmap and open issues, please refer to the [current open issues](https://github.com/kathyqian/crisp-ghost-theme/issues?state=open).
 
-### Screenshot
+This theme has been updated for Ghost 0.5.8 and is compatible with all modern versions of Chrome, Firefox, Safari, and IE9+.
 
-![Ghostwriter home page](https://github.com/roryg/ghostwriter/blob/master/screenshot.png?raw=true)
+**Version 0.5.0 &mdash; March 5, 2015**
+
+* Restructured file repository for easier updates (BREAKING CHANGE) 
+* Added code highlighting with highlight.js
+
+Please see the [wiki](https://github.com/kathyqian/crisp-ghost-theme/wiki/) for details regarding previous releases.
+
+### Credits
+
+Many thanks to [@davegandy](http://twitter.com/davegandy) for the [Font Awesome](https://github.com/FortAwesome/Font-Awesome) icons used throughout the theme.
+
+Social sharing buttons are a modified version of the [Ridiculously Responsive Social Sharing Buttons](https://github.com/kni-labs/rrssb) by [@dbox](http://www.twitter.com/dbox) and [@seagoat](http://www.twitter.com/seagoat). Great job, guys!
+
+### License
+
+This theme is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-nc-sa/4.0/) license. Go crazy on the customizations, distribute to your friends, just give me some credit and don't sell my work. Feel free to modify the footer text, though I would really appreciate it if you could keep at least one of the links intact.
+
+### More Screenshots
+
+![Post](https://raw.github.com/kathyqian/crisp-ghost-theme/master/screenshots/post.png)
+![Comments](https://raw.github.com/kathyqian/crisp-ghost-theme/master/screenshots/post-2.png)
